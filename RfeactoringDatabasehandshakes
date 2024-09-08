@@ -1,0 +1,8 @@
+// Database handshakes
+class AccountRepository {
+    public void createUser() {
+        // step 2
+        System.out.println("🔐 Auth Success!");
+        System.out.println("Store user data into database");
+    }
+}
