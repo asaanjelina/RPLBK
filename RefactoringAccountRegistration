@@ -1,0 +1,7 @@
+// Account Registration
+class TwitterAccountRegister {
+    public void registerUser() {
+        // step 1
+        System.out.println("fill account internal details");
+    }
+}
