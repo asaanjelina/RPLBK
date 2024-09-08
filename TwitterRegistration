@@ -1,0 +1,12 @@
+public class TwitterRegistration {
+    public void register() {
+        // step 1
+        System.out.println("Fill signup form");
+
+        // step 2
+        System.out.println("Store account details in database");
+
+        // step 3
+        System.out.println("Send a welcome message");
+    }
+}
