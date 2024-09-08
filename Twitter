@@ -1,0 +1,46 @@
+// Execution Class or Main class
+public class TwitterAccountRegister {
+    public static void main(String[] args) {
+        TwitterAccountService service = new TwitterAccountService();
+        service.registerUser();
+    }
+}
+
+// Account Registration Service
+class TwitterAccountService {
+    AccountRepository repository = new AccountRepository();
+    NotificationService notificationService = new NotificationService();
+
+    public void registerUser() {
+        // step 1
+        System.out.println("fill account internal details");
+
+        repository.createUser();
+        notificationService.sendNotification();
+    }
+}
+
+// Notification Service
+class NotificationService {
+    public void sendNotification() {
+        // step 3
+        System.out.println("Send out welcome message");
+    }
+}
+
+// Database handshakes
+class AccountRepository {
+    public void createUser() {
+        // step 2
+        System.out.println("🔐Signup Success!! Registered");
+        System.out.println("Store user data into database");
+    }
+}
+
+/*
+Outputs:
+fill account internal details
+🔐Signup Success!! Registered
+Store user data into database
+Send out welcome message
+*/
