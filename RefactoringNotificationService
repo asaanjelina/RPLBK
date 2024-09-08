@@ -1,0 +1,7 @@
+// Notification Service
+class NotificationService {
+    public void sendNotification() {
+        // step 3
+        System.out.println("Send out welcome message");
+    }
+}
